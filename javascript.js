@@ -5,7 +5,7 @@ const radios = document.getElementsByName("caseOption");
 
 function transformText() {
   const text = inputText.value;
-  const selectedOption = Array.from(radios).find((r) => r.checked).value;
+  const selectedOption = Array.from(radios).find(r => r.checked).value;
 
   let result = "";
 
@@ -16,20 +16,25 @@ function transformText() {
     case "lowercase":
       result = text.toLowerCase();
       break;
-    case "capitalise": // CHANGED FROM "camelcase"
+    case "capitalise":
       result = text
         .toLowerCase()
         .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
       break;
   }
 
   outputText.value = result;
+
+  if (result.trim()) {
+    outputText.select();
+    document.execCommand("copy");
+  }
 }
 
 inputText.addEventListener("input", transformText);
-radios.forEach((radio) => radio.addEventListener("change", transformText));
+radios.forEach(radio => radio.addEventListener("change", transformText));
 
 copyBtn.addEventListener("click", () => {
   outputText.select();
