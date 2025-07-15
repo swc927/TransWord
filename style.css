@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #161b22;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  border: 1px solid #30363d;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #58a6ff;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #58a6ff;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.radio-group {
+  margin: 20px 0;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+}
+
+.radio-group input[type="radio"] {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  accent-color: #58a6ff;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #21262d;
+  color: #58a6ff;
+  border: 1px solid #58a6ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}

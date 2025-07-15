@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Transformer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>WORD TRANSFORMER</h1>
+
+    <label for="inputText">ENTER A WORD:</label>
+    <input type="text" id="inputText" placeholder="Type something..." />
+
+    <div class="radio-group">
+      <label><input type="radio" name="caseOption" value="uppercase" checked /> CAPITAL LETTERS</label>
+      <label><input type="radio" name="caseOption" value="capitalise" /> CAPITALISE</label> <!-- CHANGED -->
+      <label><input type="radio" name="caseOption" value="lowercase" /> SMALL LETTERS</label>
+    </div>
+
+    <div class="output-section">
+      <label for="outputText">OUTPUT:</label>
+      <textarea id="outputText" readonly></textarea>
+      <button id="copyBtn">COPY</button>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
