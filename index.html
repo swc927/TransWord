@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WORD TRANSFORMER by SWC</title>
+  <title>Word Transformer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="container">
-    <h1>WORD TRANSFORMER by SWC</h1>
+    <h1>WORD TRANSFORMER</h1>
 
     <label for="inputText">ENTER A WORD:</label>
     <input type="text" id="inputText" placeholder="Type something..." />
@@ -27,6 +27,12 @@
       <button id="copyBtn">COPY</button>
     </div>
   </div>
+
+  <div class="error-section">
+    <label for="errorText">DETECTED ISSUES:</label>
+    <textarea id="errorText" readonly placeholder="No spelling or grammar issues detected."></textarea>
+  </div>
+
 
   <script src="javascript.js"></script>
 </body>
