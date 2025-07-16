@@ -98,3 +98,16 @@ button:hover {
   background-color: #58a6ff;
   color: #0d1117;
 }
+
+.error-section {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+#errorText {
+  height: 100px;
+  background-color: #0d1117;
+  border: 1px solid #ff7b72;
+  color: #ffa198;
+  font-style: italic;
+}
