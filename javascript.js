@@ -40,12 +40,19 @@ async function transformText() {
       result = text.toLowerCase();
       break;
     case "capitalise":
-      result = text
-        .toLowerCase()
-        .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-      break;
+  result = text
+    .toLowerCase()
+    .split("\n")
+    .map((line) =>
+      line
+        .split(/\s+/)
+        .map((word) =>
+          word ? word.charAt(0).toUpperCase() + word.slice(1) : ""
+        )
+        .join(" ")
+    )
+    .join("\n");
+  break;
     default:
       result = text;
   }
